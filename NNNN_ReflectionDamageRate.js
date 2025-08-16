@@ -149,9 +149,9 @@
     const enableDebug = parameters['enableDebug'] === 'true';
     
     // Debug logging
-    function debugLog(message) {
+    function debugLog(...messages) {
         if (enableDebug) {
-            console.log(`[${pluginName}] ${message}`);
+            console.log(`[${pluginName}]`, ...messages);
         }
     }
     
