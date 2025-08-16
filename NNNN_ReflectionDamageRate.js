@@ -8,12 +8,15 @@
  * @param damageCalculationMode
  * @text 傷害計算模式 / Damage Calculation Mode / ダメージ計算モード
  * @desc 多個反射倍率的計算方式 / How to calculate multiple reflection rates / 複数の反射倍率の計算方法
+ * @type select
  * @option 相加 / Add / 加算
  * @value add
  * @option 最大值 / Maximum / 最大値
  * @value max
  * @option 優先級 / Priority / 優先度
  * @value priority
+ * @option 預設 / Default / デフォルト
+ * @value default
  * @default add
  * 
  * @param bothDamage
@@ -40,7 +43,7 @@
  * @text 物理反射文字 / Physical Reflection Text / 物理反射テキスト
  * @desc 物理反射的顯示文字 / Physical reflection text / 物理反射の表示テキスト
  * @type string
- * @default Physical Reflection
+ * @default %1 reflected the physical attack
  * 
  * @param phyRefRateParamIndex
  * @text 物理反射率索引 / Physical Reflection Rate Param Index / 物理反射率パラメータ索引
@@ -142,7 +145,7 @@
     const bothDamage = parameters['bothDamage'] === 'true';
     const defaultDamageRate = Number(parameters['defaultDamageRate']) / 100 || 1.0;
     const enablePhysicalReflection = parameters['enablePhysicalReflection'] === 'true';
-    const physicalReflectionText = parameters['physicalReflectionText'] || '%1 反射了物理攻擊';
+    const physicalReflectionText = parameters['physicalReflectionText'] || '%1 reflected the physical attack';
     const magicalReflectionDamageRateParamIndex = Number(parameters['magRefDamageParamIndex']) || 10;
     const physicalReflectionRateParamIndex = Number(parameters['phyRefRateParamIndex']) || 10;
     const physicalReflectionDamageRateParamIndex = Number(parameters['phyRefDamageParamIndex']) || 11;
