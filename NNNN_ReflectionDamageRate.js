@@ -122,6 +122,19 @@
  * 原生：反射傷害倍率固定為1 / Native: Reflection damage rate is fixed at 1 / ネイティブ：反射ダメージ倍率は1で固定
  * 擴展：可調整反射傷害倍率 / Extended: Adjustable reflection damage rates / 拡張：反射ダメージ倍率調整可能
  * 
+ * 【追加能力値 / Additional Parameters / 追加パラメータ】
+ * 物理反射率会做为一个新能力值加入到追加能力值 代号为 prf 可用於傷害公式中
+ * the physical reflection rate will be added as a new parameter to the additional parameters
+ * 物理反射率は追加パラメータとして追加されます
+ * 
+ * 【特殊能力値 / Special Parameters / 特殊パラメータ】
+ * magicalReflectionDamageRate 魔法反射傷害倍率 代號為 mrd 可用於傷害公式中
+ * magicalReflectionDamageRate the final magical reflection damage rate will be added as a new parameter to the special parameters
+ * 魔法反射ダメージ率は特殊パラメータとして追加されます
+ * 
+ * physicalReflectionDamageRate 物理反射傷害倍率 代號為 prd 可用於傷害公式中
+ * physicalReflectionDamageRate the final physical reflection damage rate will be added as a new parameter to the special parameters
+ * 物理反射ダメージ率は特殊パラメータとして追加されます
  * ============================================================================
  */
 
